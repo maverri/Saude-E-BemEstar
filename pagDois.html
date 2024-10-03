@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ao escrever uma meta tag, use entre 140 e 160 caracteres para que o Google possa exibir toda a sua mensagem. Não se esqueça de incluir sua palavra-chave!">
+    <link rel="stylesheet" type="text/css" href="styleDois.css" media="screen">
+    <title>Saúde e Bem-estar - Inscrição</title>
+</head>
+<body>
+    <header>
+        <h1>Inscreva-se Agora</h1>
+        <hr>
+        <h2>Preencha o Formulário de Pagamento:</h2>
+        <form method="post" action="#">
+            <fieldset>
+                <legend><strong>Dados pessoais</strong></legend>
+                <label>Nome:</label>
+                <input type="text" name="nome" placeholder="Digite o Nome" required>
+                <label>Data de nascimento:</label>
+                <input type="date" name="dt_nasc" min="1900-01-01" required>
+                <label>Telefone:</label>
+                <input type="tel" name="telefone" placeholder="(XX) XXXXX-XXXX" maxlength="13" required>
+                <label>Email:</label>
+                <input type="email" name="email" placeholder="a@a.com" required>
+                <label>CPF:</label>
+                <input type="tel" name="telefone" placeholder="XXX.XXX.XXX-XX" maxlength="13" required>
+        </fieldset>
+    
+
+            <fieldset>
+                <legend>Endereço</legend>
+                <label>Endereço:</label>
+                <input type="text" name="endereço" placeholder="Informe seu endereço" required>
+                <label>Cidade:</label>
+                <input type="text" name="Informe sua cidade" placeholder="Cidade" required>
+                <label>Estado:</label>
+                <select name="Estado">
+                    <optgroup label="Sudeste">
+                        <option value="saopaulo">São Paulo</option>
+                        <option value="riodejaneiro">Rio de Janeiro</option>
+                        <option value="minasgerais">Minas Gerais</option>
+                        <option value="espiritosanto">Espirito Santo</option>
+                    </optgroup>
+                    <optgroup label="Sul">
+                        <option value="parana">Paraná</option>
+                        <option value="santacatarina">Santa Catarina</option>
+                        <option value="riogsul">Rio Grande do Sul</option>
+                    </optgroup>
+                </select>
+     
+        </fieldset>
+
+            <fieldset>
+                <legend><strong>Plano</strong></legend>
+                <input type="radio" name="resposta" id="plano simples" value="palno s" checked>
+                <label for="animal-sim">Plano Simples</label>
+                <input type="radio" name="resposta" id="plano premium" value="plano p" checked required>
+                <label for="animal-nao">Plano Premium </label>
+            </fieldset>
+
+            <fieldset>
+                <legend><strong>Forma de Pagamento</strong></legend>
+                <input type="radio" name="resposta2" id="cartao de debito" value="debito" checked required> 
+                <label for="animal-sim">Cartão de Débito</label>
+                <input type="radio" name="resposta2" id="cartao de credito" value="credito" checked required>
+                <label for="animal-nao">Cartão de Crédito </label>
+                <input type="radio" name="resposta2" id="pix" value="pix" checked required>
+                <label for="animal-nao">Pix</label>
+                <br><br>
+                <label>Numero do Cartão:</label>
+                <input type="text" name="nome" placeholder="**** **** **** ****" maxlength="20" required>
+                <br>
+                <label>Data de Expiração:</label>
+                <input type="text" name="data" placeholder="mm/aa" min="1900-01-01" maxlength="5" required>
+                <br>
+                <label>Código de Segurança:</label>
+                <input type="text" name="telefone" placeholder="CVV" maxlength="3" required>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Termos de contrato</strong></legend>
+            <p>Ao acessar e utilizar nossos serviços, você concorda com os seguintes termos e condições. Se você
+                não concordar com algum dos aspectos aqui descritos, solicitamos que não continue a utilizar
+                nosso site/serviço.
+    
+                Podemos alterar estes termos a qualquer momento. As mudanças serão publicadas nesta página, e o
+                uso contínuo do site/serviço após essas modificações implica na aceitação das novas condições.
+                Assim, recomendamos que você revise esta página periodicamente.</p>
+                <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="TT" checked required />
+    
+                <label for="checkbox-futebol">Aceito os termos de contrato</label>
+    
+                <input type="checkbox" id="checkbox-futebol" name="esportes[]" value="TT" />
+    
+                <label for="checkbox-futebol">Aceito receber notícias</label>
+              </fieldset>
+              <br>
+            </form>
+                <br>
+                
+            <div class="direita">
+              <a href="pagTres.html"><button>Confirme o Pagamento</button></a>
+            </div>
+    <footer>
+        <center> <p>&copy; Copyright  2024 - SENAI - Saúde e Bem-Estar </p></center>
+    </footer>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
